@@ -1,0 +1,44 @@
+info:
+  name: "Hello World"
+  author: "Sisa-Tech Pty Ltd"
+  description: "Hello, world!"
+  url: "go-vorteil.io"
+  date: 0001-01-01T00:00:00Z
+  version: "1.0.0"
+env:
+  bin: /app
+  args: ""
+  vars: 
+    BACKGROUND: "0xFFFFFF"
+vfs:
+  filesystem: ext2
+  redirects: []
+  accelerate: []
+network:
+  hostname: ""
+  dns:
+  - 8.8.8.8
+  - 8.8.4.4
+  nics:
+  - ip: dhcp
+    mask: ""
+    gateway: ""
+  ports: 
+  - protocol: http
+    port: 8888
+    cards: ""
+system:
+  stdout-mode: default 
+  redirect-format: vorteil-metadata
+  max-fds: 1024
+  ntp-servers:
+  - 0.pool.ntp.org
+  - 1.pool.ntp.org
+  - 2.pool.ntp.org
+  - 3.pool.ntp.org
+build:
+  kernel: ""
+  disk-size: 0
+vm:
+  cpus: 1
+  memory: 128
